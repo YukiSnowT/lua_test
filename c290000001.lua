@@ -1,12 +1,12 @@
---カタパルト・タートル
+--test
 function c290000001.initial_effect(c) --起動時に呼び出される。必ず必要
 	--damage
 	local e1=Effect.CreateEffect(c) --空の効果オブジェクトを生成
 	e1:SetDescription(aux.Stringid(290000001,0))
 	e1:SetCategory(CATEGORY_DAMAGE)
 	e1:SetProperty(EFFECT_FLAG_PLAYER_TARGET)
-	e1:SetType(EFFECT_TYPE_QUICK_O) --※誘発即時
-	e1:SetCode(EVENT_FREE_CHAIN) --フリーチェーン
+	e1:SetType(EFFECT_TYPE_QUICK_O) --任意誘発の即時発火
+	e1:SetCode(EVENT_FREE_CHAIN) --いつでも呼び出せることを示す
 	e1:SetRange(LOCATION_MZONE)
 	e1:SetCost(c290000001.cost)
 	e1:SetTarget(c290000001.target)

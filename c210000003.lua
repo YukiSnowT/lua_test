@@ -1,6 +1,6 @@
 --003
 function c210000003.initial_effect(c)
-	--link summon
+	--link定義
 	--aux.AddLinkProcedure(c,aux.FilterBoolFunction(Card.IsLinkRace,RACE_CYBERSE),2,2) --特定の属性を持つオブジェクト2個以上2個以下
 	aux.AddLinkProcedure(c,c210000003.matfilter,1,1) --下記関数で定義する
 	c:EnableReviveLimit()
